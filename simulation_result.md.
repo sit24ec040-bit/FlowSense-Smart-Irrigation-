@@ -1,0 +1,19 @@
+FlowSense – Software Validation
+
+Objective
+
+To document the expected responses of the FlowSense irrigation controller before physical hardware testing.
+
+Test Cases
+
+Test| Input condition| Expected response
+T1| Soil moisture above threshold| Irrigation OFF
+T2| Soil moisture below threshold and tank sufficient| Irrigation requested
+T3| Tank level drops and soil moisture rises| Irrigation verified
+T4| Tank level drops but soil moisture barely rises| Possible leak or poor infiltration
+T5| Tank level barely drops and soil moisture barely rises| Possible blockage or no delivery
+T6| Invalid sensor reading| Sensor error; irrigation should stop
+T7| Soil is wet and VPD is high| Irrigation remains OFF under the soil-moisture threshold rule
+T8| Soil is dry and tank water is insufficient| Irrigation OFF; low-water warning
+
+Status: Expected behaviors documented. These test cases have not yet been verified through hardware testing or a dedicated software simulation.
