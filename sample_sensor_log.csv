@@ -1,0 +1,3 @@
+test_id,timestamp,soil_raw,soil_percent,temp_c,humidity_percent,tank_distance_before_cm,tank_distance_after_cm,irrigation_duration_s,soak_delay_s,observed_condition,result
+EXAMPLE_01,example_only,2500,28,29.0,62,18.0,16.5,5,30,Illustrative row only,Possible irrigation response
+EXAMPLE_02,example_only,2600,25,30.0,58,18.0,17.9,5,30,Illustrative row only,Possible low delivery
